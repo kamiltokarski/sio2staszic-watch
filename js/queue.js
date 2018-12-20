@@ -48,7 +48,7 @@ var loadChart = new Chart(load_chart_canv, {
       xAxes: [{
         type: 'realtime',
         realtime: {
-          delay: 2000,
+          refresh: 1000,
           onRefresh: function(chart) {
             new_data = getQueue();
 
