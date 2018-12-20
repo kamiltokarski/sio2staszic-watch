@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wykresy SIO2 Staszica</title>
+
+    <style media="screen">
+      html, body {
+        margin: 0;
+        padding: 0;
+
+        min-height: 100vh;
+        min-width: 100vw;
+        overflow-x: hidden;
+      }
+
+      #site-title {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 0;
+      }
+
+      .container {
+        display: flex;
+        width: 100vw;
+        min-height: 80vh;
+      }
+
+      .chart-container {
+        margin: 5rem;
+
+        width: 500px;
+        height: 300px;
+      }
+
+      .chart-title {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="site-title">Wykresy SIO2 w Staszicu</h1>
+    <div class="container">
+      <div class="chart-container">
+        <h2 class="chart-title">Obciążenie</h2>
+        <canvas id="load-chart" width="500px;" height="300px"></canvas>
+      </div>
+      <div class="chart-container">
+        <h2 class="chart-title">Kolejka</h2>
+        <canvas id="queue-chart" width="500px;" height="300px"></canvas>
+      </div>
+    </div>
+
+  </body>
+
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/moment.js" charset="utf-8"></script>
+  <script src="js/chart.js" charset="utf-8"></script>
+  <script src="js/chart-stream.js" charset="utf-8"></script>
+
+  <script src="js/load.js" charset="utf-8"></script>
+  <script src="js/queue.js" charset="utf-8"></script>
+</html>
